@@ -1,0 +1,32 @@
+//- layout.pug
+doctype html
+html(lang="en")
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900', rel='stylesheet')
+    // inline ./styles/vendor/normalize.css
+
+    link(rel='stylesheet', href='./styles/vendor/normalize.css', inline)
+    // inline ./styles/vendor/flexboxgrid.css
+
+    link(rel='stylesheet', href='./styles/vendor/flexboxgrid.css', inline)
+
+    // inline ./styles/style.css
+    link(rel='stylesheet', href='./styles/style.css', inline)
+    title DCP Help Template POC
+
+    body
+      .container-fluid.container.container--max-width
+        .row.middle-xs.row--centering
+          .col
+            block content
+              .row.center-xs
+                .col-xs-12
+                  .text--center.testing
+                    h1 Your Content Goes Here!
+                    h3 Modify by extending/overwriting the block `content`
+                    h4: a(href="https://pugjs.org/api/getting-started.html" target="_blank") Pug Docs
+                    h4: a(href="http://flexboxgrid.com/" target="_blank") Uses FlexBox Grid
+                    h5 You will probably want to start your layout w/ `.row.center-xs>.col-xs-12`

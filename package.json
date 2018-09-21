@@ -1,0 +1,26 @@
+{
+  "name": "gulp-html-inline-css",
+  "version": "1.0.0",
+  "description": "A simple project starter for building individual HTML files with inlined CSS using FlexboxGrid and Normalize.",
+  "scripts": {
+    "start": "yarn gulp",
+    "build": "yarn gulp build"
+  },
+  "keywords": [],
+  "author": "tabuckner",
+  "license": "MIT",
+  "devDependencies": {
+    "@thasmo/gulp-juice": "^0.2.0",
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-inline-source": "^3.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-purgecss": "^1.0.0",
+    "run-sequence": "^2.2.1",
+    "through2": "^2.0.3"
+  }
+}
